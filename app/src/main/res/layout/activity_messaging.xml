@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.alespero.expandablecardview.ExpandableCardView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:title="Signalements"
+            app:icon="@drawable/ic_user"
+            app:inner_view="@layout/lite_list_demo_row"
+            app:expandOnClick="true"
+            app:animationDuration="300"
+            app:startExpanded="false"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            app:elevation="8dp"
+            app:fabSize="auto"
+            android:src="@drawable/ic_create_24dp" />
+
+
+
+        <!-- Bottom Navigation Bar -->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottomBar"
+            android:layout_alignParentBottom="true">
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavView_Bar"
+                android:background="@drawable/white_grey_border_top"
+                android:theme="@style/Widget.BottomNavigationView"
+                app:menu="@menu/bottom_navigation_menu"
+                app:elevation="8dp"
+                app:labelVisibilityMode="labeled">
+
+
+            </android.support.design.widget.BottomNavigationView>
+        </android.support.design.widget.CoordinatorLayout>
+        <!-- End of the Bottom Navigation View -->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

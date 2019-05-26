@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="381dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtWelcome"
+            app:layout_constraintVertical_bias="1.0">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fieldEmail"
+                    style="@style/Theme.AppCompat.DayNight.DarkActionBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="13dp"
+                    android:ems="10"
+                    android:hint="Email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSignInEmail"
+                style="@style/AppTheme.RoundedCornerMaterialButtonEmail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="80dp"
+                android:text="Continue"
+                android:textAllCaps="false" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/buttonFacebookLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSignInFacebook"
+                style="@style/AppTheme.RoundedCornerMaterialButtonFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="10dp"
+                android:text="Continue with Facebook"
+                android:paddingLeft="14dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@mipmap/logo_facebook_white"/>
+
+            <Button
+                android:id="@+id/btnSignInGoogle"
+                style="@style/AppTheme.RoundedCornerMaterialButtonGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="0dp"
+                android:text="Continue with Google"
+                android:textAllCaps="false"
+                android:drawableLeft="@mipmap/logo_google_white"
+                android:paddingLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/pass_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="0dp"
+                android:text="Termes de Contrat et de services Jood"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.8"
+            android:background="@mipmap/slide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="176dp"
+            android:background="@mipmap/logo_jood"
+            android:foregroundGravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="30dp"
+            android:text="Bienvenue"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

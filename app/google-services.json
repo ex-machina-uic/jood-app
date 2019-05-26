@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794734847085",
+    "firebase_url": "https://androidjood.firebaseio.com",
+    "project_id": "androidjood",
+    "storage_bucket": "androidjood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794734847085:android:2849c2205c681b35",
+        "android_client_info": {
+          "package_name": "com.google.testadroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794734847085-gnfi133j3l0h62e3vvkuie6frqmcteq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.testadroid",
+            "certificate_hash": "ab3a67433e9abfc9bac80c72c8ed397cff9a2153"
+          }
+        },
+        {
+          "client_id": "794734847085-4gqdma5p3e0pki2p6q29goss1h7sq2de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSVFIANLX2L2aK7cyf3v85ZIo3b59ZInE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794734847085-4gqdma5p3e0pki2p6q29goss1h7sq2de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
