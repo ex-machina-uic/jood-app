@@ -1,15 +1,15 @@
-package com.google.testadroid.Adapters;
+package com.google.joodapp.Adapters;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.testadroid.Models.MapLocation;
-import com.google.testadroid.Models.Report;
-import com.google.testadroid.R;
+import com.google.joodapp.Models.MapLocation;
+import com.google.joodapp.Models.Report;
+import com.google.joodapp.R;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;

@@ -1,4 +1,4 @@
-package com.google.testadroid.Models;
+package com.google.joodapp.Models;
 
 import com.google.android.gms.maps.model.LatLng;
 

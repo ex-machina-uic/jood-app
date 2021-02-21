@@ -1,4 +1,4 @@
-package com.google.testadroid;
+package com.google.joodapp;
 
 import org.junit.Test;
 

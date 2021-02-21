@@ -1,4 +1,4 @@
-package com.google.testadroid.Models;
+package com.google.joodapp.Models;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package com.google.testadroid;
+package com.google.joodapp;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.internal.BottomNavigationMenuView;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -73,7 +73,7 @@ public class MessagingActivity extends AppCompatActivity {
 
         for (int i = 0; i < menuView.getChildCount(); i++) {
 
-            final View iconView = menuView.getChildAt(i).findViewById(android.support.design.R.id.icon);
+            final View iconView = menuView.getChildAt(i).findViewById(com.google.android.material.R.id.icon);
             final ViewGroup.LayoutParams layoutParams = iconView.getLayoutParams();
             final DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
             layoutParams.height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 21, displayMetrics);

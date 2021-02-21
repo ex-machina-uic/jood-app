@@ -1,12 +1,12 @@
-package com.google.testadroid;
+package com.google.joodapp;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,9 +30,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.testadroid.Models.NamedLocation;
-import com.google.testadroid.Models.Report;
-import com.google.testadroid.Models.User;
+import com.google.joodapp.Models.NamedLocation;
+import com.google.joodapp.Models.Report;
+import com.google.joodapp.Models.User;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

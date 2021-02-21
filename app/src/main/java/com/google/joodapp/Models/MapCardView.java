@@ -1,10 +1,12 @@
-package com.google.testadroid.Models;
+package com.google.joodapp.Models;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-public class MapCardView extends android.support.v7.widget.CardView {
+import androidx.cardview.widget.CardView;
+
+public class MapCardView extends CardView {
     public MapCardView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestAdroid</string>
+    <string name="app_name">Jood TAG</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -10,8 +10,9 @@
 
     <string name="title_activity_navigation">Map</string>
 
-    <string name="facebook_app_id">2401441506587178</string>
-    <string name="fb_login_protocol_scheme">fb2401441506587178</string>
+    <string name="facebook_app_id">486529976107130</string>
+    <string name="fb_login_protocol_scheme">fb486529976107130</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>

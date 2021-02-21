@@ -1,43 +1,42 @@
 {
   "project_info": {
-    "project_number": "794734847085",
-    "firebase_url": "https://androidjood.firebaseio.com",
-    "project_id": "androidjood",
-    "storage_bucket": "androidjood.appspot.com"
+    "project_number": "770499087329",
+    "firebase_url": "https://jood-c689c.firebaseio.com",
+    "project_id": "jood-c689c",
+    "storage_bucket": "jood-c689c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:794734847085:android:2849c2205c681b35",
+        "mobilesdk_app_id": "1:770499087329:android:7d085aee387997200160a0",
         "android_client_info": {
-          "package_name": "com.google.testadroid"
+          "package_name": "com.google.joodapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "794734847085-gnfi133j3l0h62e3vvkuie6frqmcteq2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.testadroid",
-            "certificate_hash": "ab3a67433e9abfc9bac80c72c8ed397cff9a2153"
-          }
-        },
-        {
-          "client_id": "794734847085-4gqdma5p3e0pki2p6q29goss1h7sq2de.apps.googleusercontent.com",
+          "client_id": "770499087329-2n0gi47fp2btkpk7b5s0rk5e5ureiqju.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDSVFIANLX2L2aK7cyf3v85ZIo3b59ZInE"
+          "current_key": "AIzaSyA0ekAp9ZsgNxaZXMatZRM_1vitwBMeNi8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "794734847085-4gqdma5p3e0pki2p6q29goss1h7sq2de.apps.googleusercontent.com",
+              "client_id": "770499087329-2n0gi47fp2btkpk7b5s0rk5e5ureiqju.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "770499087329-2208e9rkhb2bdujnd77st0429f4hgqvl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "omar.JOOD"
+              }
             }
           ]
         }
