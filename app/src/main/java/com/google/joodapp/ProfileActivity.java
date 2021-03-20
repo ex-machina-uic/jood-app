@@ -117,16 +117,13 @@ public class ProfileActivity extends AppCompatActivity {
                 list = new ArrayList<Report>();
                 namedLocations = new ArrayList<>();
 
-                Log.e("Report " ,""+dataSnapshot.getValue().toString());
-
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
 
                         Report p = dataSnapshot1.getValue(Report.class);
-                        Log.d("rep", p.getPid().toString());
                         list.add(p);
                         NamedLocation namedLocation = new NamedLocation(p.getDisplayNameUserPost(),
-                                new LatLng(p.getLatitude(), p.getLongitude()), p.getPublishedAt(), p.getTimePosted(), p.getProfilePic(), p.getAdresse());
+                                new LatLng(p.getLatitude(), p.getLongitude()), p.getPublishedAt(), p.getHeure(), p.getPhotoProfile(), p.getAdresse());
                         namedLocations.add(namedLocation);
 
                         mRecyclerView.setAdapter(new ProfileActivity.MapAdapter(namedLocations));

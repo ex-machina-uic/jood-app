@@ -153,17 +153,16 @@ public class MainActivity extends AppCompatActivity
                 Log.d("ref", reference.toString());
 
                 list = new ArrayList<Report>();
-                namedLocations = new ArrayList<>();
+                namedLocations = new ArrayList<NamedLocation>();
 
                 Log.e("Report " ,""+dataSnapshot.getValue().toString());
 
                 for(DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
                     Report p = dataSnapshot1.getValue(Report.class);
-                    Log.d("rep", p.getPid().toString());
                     list.add(p);
                     NamedLocation namedLocation = new NamedLocation(p.getDisplayNameUserPost(),
-                            new LatLng(p.getLatitude(), p.getLongitude()), p.getPublishedAt(), p.getTimePosted(), p.getProfilePic(), p.getAdresse());
+                            new LatLng(p.getLatitude(), p.getLongitude()), p.getPublishedAt(), p.getHeure(), p.getPhotoProfile(), p.getAdresse());
                     namedLocations.add(namedLocation);
                 }
 
@@ -487,7 +486,7 @@ public class MainActivity extends AppCompatActivity
                 date.setText(item.date);
                 time.setText(item.pid);
                 adresse.setText(item.adresse);
-
+                Log.d("Profile Image", "Profile Image : "+ item.profileImgUri);
                 Picasso.with(MainActivity.this).load(item.profileImgUri).into(profilePic);
 
             }

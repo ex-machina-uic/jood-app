@@ -20,7 +20,6 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -60,13 +59,14 @@
             style="@style/AuthorTextViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
             android:text="Time Posted"
-            app:layout_constraintTop_toTopOf="@+id/avatar_image"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/avatar_image"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="@+id/avatar_image"
+            map:layout_constraintBottom_toTopOf="@+id/lite_listrow_map" />
 
 
         <com.google.android.gms.maps.MapView
